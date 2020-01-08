@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4FBF1B49-2BBA-4E36-8DA5-D282FE770B58}</ProjectGuid>
+    <RootNamespace>EZ001Anstoss3BatchTextEditor</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>
+    </LinkIncremental>
+    <TargetName>A3XmlConverter</TargetName>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetName>A3XmlConverter</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\# Eric\# Personal Development\###ERIC_TEMP###\A32Xml\utf8_v2_3_4\source;C:\# Eric\# Personal Development\###ERIC_TEMP###\A32Xml\boost_1_56_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>C:\# Eric\# Personal Development\###ERIC_TEMP###\A32Xml\boost_1_56_0\stage\lib;C:\# Eric\# Personal Development\###ERIC_TEMP###\A32Xml\boost_1_56_0\lib32-msvc-11.0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Profile>true</Profile>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\# Eric\# Personal Development\###ERIC_TEMP###\A32Xml\utf8_v2_3_4\source;C:\# Eric\# Personal Development\###ERIC_TEMP###\A32Xml\boost_1_56_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>C:\# Eric\# Personal Development\###ERIC_TEMP###\A32Xml\boost_1_56_0\stage\lib;C:\# Eric\# Personal Development\###ERIC_TEMP###\A32Xml\boost_1_56_0\lib32-msvc-11.0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="a3_db_converter.cpp" />
+    <ClCompile Include="a3_db_io.cpp" />
+    <ClCompile Include="a3_ui_text.cpp" />
+    <ClCompile Include="ajugend.cpp" />
+    <ClCompile Include="ajugend_enum.cpp" />
+    <ClCompile Include="amateurv.cpp" />
+    <ClCompile Include="aspieler.cpp" />
+    <ClCompile Include="bimap.cpp" />
+    <ClCompile Include="charset_text_convert.cpp" />
+    <ClCompile Include="cleaguegrp.cpp" />
+    <ClCompile Include="enum_value.cpp" />
+    <ClCompile Include="error_handling.cpp" />
+    <ClCompile Include="a3_db_file_lib.cpp" />
+    <ClCompile Include="eurosieger.cpp" />
+    <ClCompile Include="reporter_enum.cpp" />
+    <ClCompile Include="schiri_enum.cpp" />
+    <ClCompile Include="spiel.cpp" />
+    <ClCompile Include="ischiri.cpp" />
+    <ClCompile Include="iverein.cpp" />
+    <ClCompile Include="kritiker.cpp" />
+    <ClCompile Include="land.cpp" />
+    <ClCompile Include="liga.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="manager.cpp" />
+    <ClCompile Include="misc_lib.cpp" />
+    <ClCompile Include="nation.cpp" />
+    <ClCompile Include="os_lib.cpp" />
+    <ClCompile Include="promi.cpp" />
+    <ClCompile Include="reporter.cpp" />
+    <ClCompile Include="schiri.cpp" />
+    <ClCompile Include="section.cpp" />
+    <ClCompile Include="spieler.cpp" />
+    <ClCompile Include="spieler_enum.cpp" />
+    <ClCompile Include="spielplan_verein.cpp" />
+    <ClCompile Include="sponsor.cpp" />
+    <ClCompile Include="stadion.cpp" />
+    <ClCompile Include="stadion_enum.cpp" />
+    <ClCompile Include="tinystr.cpp" />
+    <ClCompile Include="tinyxml.cpp" />
+    <ClCompile Include="tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxmlparser.cpp" />
+    <ClCompile Include="trainer.cpp" />
+    <ClCompile Include="trainer_enum.cpp" />
+    <ClCompile Include="turniergrp.cpp" />
+    <ClCompile Include="twtrainer.cpp" />
+    <ClCompile Include="value_pair.cpp" />
+    <ClCompile Include="verein.cpp" />
+    <ClCompile Include="verein_enum.cpp" />
+    <ClCompile Include="vpraesid.cpp" />
+    <ClCompile Include="xml_io.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="a3_db_converter.h" />
+    <ClInclude Include="a3_db_io.h" />
+    <ClInclude Include="a3_ui_text.h" />
+    <ClInclude Include="ajugend.h" />
+    <ClInclude Include="ajugend_enum.h" />
+    <ClInclude Include="amateurv.h" />
+    <ClInclude Include="aspieler.h" />
+    <ClInclude Include="bimap.h" />
+    <ClInclude Include="charset_text_convert.h" />
+    <ClInclude Include="cleaguegrp.h" />
+    <ClInclude Include="enum_value.h" />
+    <ClInclude Include="error_handling.h" />
+    <ClInclude Include="a3_db_file_lib.h" />
+    <ClInclude Include="eurosieger.h" />
+    <ClInclude Include="reporter_enum.h" />
+    <ClInclude Include="schiri_enum.h" />
+    <ClInclude Include="spiel.h" />
+    <ClInclude Include="ischiri.h" />
+    <ClInclude Include="iverein.h" />
+    <ClInclude Include="kritiker.h" />
+    <ClInclude Include="liga.h" />
+    <ClInclude Include="misc_lib.h" />
+    <ClInclude Include="nation.h" />
+    <ClInclude Include="os_lib.h" />
+    <ClInclude Include="promi.h" />
+    <ClInclude Include="reporter.h" />
+    <ClInclude Include="schiri.h" />
+    <ClInclude Include="spieler_enum.h" />
+    <ClInclude Include="spielplan_verein.h" />
+    <ClInclude Include="sponsor.h" />
+    <ClInclude Include="stadion_enum.h" />
+    <ClInclude Include="sub_sections.h" />
+    <ClInclude Include="land.h" />
+    <ClInclude Include="manager.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="section.h" />
+    <ClInclude Include="spieler.h" />
+    <ClInclude Include="stadion.h" />
+    <ClInclude Include="tinystr.h" />
+    <ClInclude Include="tinyxml.h" />
+    <ClInclude Include="trainer.h" />
+    <ClInclude Include="trainer_enum.h" />
+    <ClInclude Include="turniergrp.h" />
+    <ClInclude Include="twtrainer.h" />
+    <ClInclude Include="value_pair.h" />
+    <ClInclude Include="verein.h" />
+    <ClInclude Include="verein_enum.h" />
+    <ClInclude Include="vpraesid.h" />
+    <ClInclude Include="xml_io.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EZ001 - Anstoss 3 Batch Text Editor.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
